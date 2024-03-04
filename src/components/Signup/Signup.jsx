@@ -26,10 +26,7 @@ function Signup({onBtnClick}) {
       transition={{ duration: 0.5, type: "Inertia" }}
       className='signup'
     >
-  
-      <div className="back-button" onClick={() => {onBtnClick('/')}}>
-        <p className='back'>Back</p>
-      </div>
+
       <h2 className='sub-heading'>Signup</h2>
       <form onSubmit={handleSubmit}>
         <table>
@@ -64,7 +61,10 @@ function Signup({onBtnClick}) {
             </tr>
           </tbody>
         </table>
-        <button type='submit' className='homepage-button sign-up-btn'>Submit</button>
+        <div style={{padding: 0}} className='button-container'>
+          <button className='homepage-button sign-up-btn' onClick={() => { onBtnClick('/') }}>Return</button>
+          <button type='submit' className='homepage-button sign-up-btn'>Submit</button>
+        </div>
       </form>
     </motion.div>
   );

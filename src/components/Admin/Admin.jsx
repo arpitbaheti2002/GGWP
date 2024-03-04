@@ -1,18 +1,37 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import Aos from 'aos';
 import { motion } from "framer-motion";
+import Loader from '../Loader/Loader';
+import Navbar from '../Navbar/Navbar';
+import './admin.css';
 
 
-function Pending({onBtnClick}) {
+function Admin() {
+  const [isLoading, setLoading] = useState(true);
+
+  useEffect(()=> {
+    Aos.init();
+
+    setTimeout(()=> {
+      setLoading(false);
+    }, 1000);
+  }, []);
+
+
   return (
+    isLoading ? <Loader /> :
     <motion.div
       initial={{ opacity: 0, scale: 0.5 }}
       animate={{ opacity: 1, scale: 1 }} 
       transition={{ duration: 0.5, type: "Inertia" }}
-      className='applications'
+      className='homepage'
     >
-      <div className='pending-applications'>
-        <div className='mutualexchange'>
-          <p className='pending-head'>Mutual Exchnage</p>
+      <Navbar />   
+
+      
+      <div className='admin-pending-requests'>
+        <div className='requests'>
+          <p className='admin-pending-head'>Requests</p>
           No Pending Applications
           {/* <table className='status-table'>
             <tr>
@@ -27,21 +46,9 @@ function Pending({onBtnClick}) {
             </tr>
           </table> */}
         </div>
-        <div className='changeRequest'>
-          <p className='pending-head'>Room Change Request</p>
-          No Pending Applications
-        </div>
-      </div>
-      <div className='button-container'>
-        <button className="application-button" onClick={()=>{onBtnClick('Mutual')}}>
-            Mutual Exchange
-        </button>
-        <button className="application-button" onClick={()=>{onBtnClick('ReqChange')}}>
-            Request Room change
-        </button>
       </div>
     </motion.div>
   )
 }
 
-export default Pending
+export default Admin

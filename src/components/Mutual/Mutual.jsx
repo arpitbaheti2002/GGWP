@@ -22,16 +22,13 @@ function Mutual({ onBtnClick }) {
       transition={{ duration: 0.5, type: "Inertia" }}
       className='signup'
     >
-      <div className="back-button" onClick={() => {onBtnClick('/Application')}}>
-        <p className='back'>Back</p>
-      </div>
       <h2 className='sub-heading'>Mutual Exchange</h2>
       <form onSubmit={handleSubmit}>
         <table>
           <tbody>
             <tr>
               <td><label>From Registration Number:</label></td>
-              <td style={{textAlign:'left'}}>21BAI10039</td>
+              <td style={{textAlign:'left'}}>21BAI10018</td>
             </tr>
             <tr>
               <td><label>Registration Number:</label></td>
@@ -50,7 +47,10 @@ function Mutual({ onBtnClick }) {
             </tr>
           </tbody>
         </table>
-        <button type='submit' className='homepage-button sign-up-btn'>Submit</button>
+        <div className='button-container'>
+          <button className='homepage-button sign-up-btn' onClick={() => { onBtnClick('/') }}>Return</button>
+          <button type='submit' className='homepage-button sign-up-btn'>Submit</button>
+        </div>
       </form>
     </motion.div>
   );

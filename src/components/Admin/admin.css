@@ -1,0 +1,29 @@
+.requests {
+  position: relative;
+  height: 85vh;
+  width: 80vw;
+  background-color: #ffffffa1;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.admin-pending-requests {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  bottom: -5vh;
+}
+
+.admin-pending-head {
+  position: absolute;
+  top: 15px;
+  color: #292c34;
+  font-size: 3.5vh;
+  font-weight: 600;
+}
