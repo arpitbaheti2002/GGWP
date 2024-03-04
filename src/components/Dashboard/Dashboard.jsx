@@ -32,9 +32,9 @@ function Dashboard() {
   const renderActiveComponent = () => {
     switch(activeComponent) {
       case 'Signup':
-        return <Signup />;
+        return <Signup onBtnClick={setActiveComponent}/>;
       case 'Signin':
-        return <Signin />;
+        return <Signin onBtnClick={setActiveComponent}/>;
       default:
         return <DashboardMenu onBtnClick={setActiveComponent}/>;
     }

@@ -3,8 +3,8 @@
   bottom: -5vh;
   background-color: #292c34cb;
   width: 80vw;
-  left: 5vw;
-  height: 65vh;
+  left: 7.5vw;
+  height: 75vh;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -15,5 +15,48 @@
 .signup form {
   display: flex;
   flex-direction: column;
+  color: white;
+  align-items: center;
 }
 
+.sub-heading {
+  color: white;
+  font-weight: 600;
+  font-size: 6vh;
+}
+
+.signup table {
+  border-collapse: separate;
+  border-spacing: 0 15px; /* Adjust the second value to control the vertical gap */
+}
+
+.signup td {
+  padding: 5px 25px;
+  font-size: 2.7vh; 
+  text-align: right;
+}
+
+.signup td input{
+  height: 30px;
+  width: 23vw;
+  border: none;
+  border-radius: 5px;
+}
+
+.sign-up-btn{
+  width: 10vw;
+  height: 5vh;
+  margin-top: 2vh;
+}
+
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+}
+
+.back-button {
+  font-size: 15px;
+  color: white;
+}
