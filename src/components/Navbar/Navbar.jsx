@@ -6,7 +6,8 @@ function Navbar() {
     <div className='navbar'>
       <img className='logo' src='' />
       <div className='nav-items'>
-        This is Navbar
+        {/* This is Navbar */}
+        
       </div>
       <div>
 

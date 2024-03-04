@@ -21,8 +21,8 @@ function Signup({onBtnClick}) {
 
   return (
     <motion.div
-      initial={{ opacity: 0, scale: 0.5 }}
-      animate={{ opacity: 1, scale: 1 }} 
+      initial={{ bottom: '-75vh' }}
+      animate={{ bottom: '-5vh'  }} 
       transition={{ duration: 0.5, type: "Inertia" }}
       className='signup'
     >

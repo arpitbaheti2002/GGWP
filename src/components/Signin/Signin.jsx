@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { motion } from "framer-motion";
 import './signin.css'
 
@@ -7,17 +8,18 @@ function Signin({ onBtnClick }) {
   const [registrationNumber, setRegistrationNumber] = useState('');
   const [password, setPassword] = useState('');
 
+  const navigate = useNavigate();
+
   // Function to handle form submission
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Handle form submission logic here
-    console.log('Form submitted!');
+    navigate('/Application');
   };
 
   return (
     <motion.div
-      initial={{ opacity: 0, scale: 0.5 }}
-      animate={{ opacity: 1, scale: 1 }} 
+      initial={{ bottom: '-55vh' }}
+      animate={{ bottom: '-5vh'  }}  
       transition={{ duration: 0.5, type: "Inertia" }}
       className='signin'
     >

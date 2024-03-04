@@ -14,7 +14,7 @@ import Signin from '../Signin/Signin';
 
 function Dashboard() {
   const [isLoading, setLoading] = useState(true);
-  const [activeComponent, setActiveComponent] = useState('DashboardMenu'); // State to manage the active component
+  const [activeComponent, setActiveComponent] = useState('DashboardMenu'); 
 
   useEffect(()=> {
     Aos.init();

@@ -1,0 +1,80 @@
+.applications{
+  position: absolute;
+  bottom: -5vh;
+  background-color: #292c34cb;
+  width: 80vw;
+  left: 7.5vw;
+  height: 80vh;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  color: white;
+  font-size: 3vh;
+}
+
+.pending-applications {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  height: 55vh;
+}
+
+.application-button {
+  border-radius: 8px;
+  border-style: none;
+  background-color: #2475EE;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  height: 7vh;
+  width: 18vw;
+  padding: 0 3rem;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all .5s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.mutualexchange {
+  position: relative;
+  height: 25vh;
+  width: 80vw;
+  background-color: #ffffff6d;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.changeRequest {
+  position: relative;
+  height: 25vh;
+  width: 80vw;
+  background-color: #ffffff6d;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pending-head {
+  position: absolute;
+  top: 10px;
+  color: #292c34;
+}
+
+.status-table {
+  text-align: center;
+}
+
+.status-table{
+  border-spacing: 10px;
+}

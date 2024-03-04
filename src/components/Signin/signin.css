@@ -41,6 +41,8 @@
   width: 23vw;
   border: none;
   border-radius: 5px;
+  font-size: 2.7vh;
+  padding: 0 5px;
 }
 
 .sign-in-btn{
