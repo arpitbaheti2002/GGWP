@@ -1,0 +1,12 @@
+.homepage {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url('background.jpg') center/cover no-repeat;
+  position: absolute;
+  height: 100vh;
+  z-index: -1;
+  user-select: none;
+}
